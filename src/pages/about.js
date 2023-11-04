@@ -6,13 +6,15 @@ import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, {once:true});
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
@@ -22,9 +24,9 @@ const AnimatedNumbers = ({ value }) => {
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-if(ref.current && latest.toFixed(0) <= value) {
-    ref.current.textContent = latest.toFixed(0);
-}
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
     });
   }, [springValue, value]);
   return <span ref={ref}></span>;
@@ -89,20 +91,26 @@ function about() {
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"><AnimatedNumbers value={40} />+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={40} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   projects completed
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"><AnimatedNumbers value={4} />+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={4} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   years of experience
                 </h2>
               </div>
             </div>
           </div>
-          <Skills/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
