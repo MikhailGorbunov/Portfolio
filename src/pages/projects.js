@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -23,7 +26,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         targets="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
@@ -68,7 +77,13 @@ const Project = ({ title, type, img, link, github }) => {
         targets="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
@@ -158,9 +173,10 @@ const projects = () => {
                 title="Crypto Screener Application"
                 img={project1}
                 summary="
-              A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
+                React Portfolio Website
+                A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+                page transitions, cool background effects, unique design and it is mobile responsive.
+                "
                 link="/"
                 github="/"
                 type="Featured Project"
