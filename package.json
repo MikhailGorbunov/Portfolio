@@ -1,7 +1,7 @@
 {
-  "name": "Mikhail-portfolio",
+  "name": "developer-portfolio-starter-code",
   "version": "0.1.0",
-  "homepage": "https://mikhailgorbunov.github.io/Portfolio/",
+  "homepage": "https://mikhailgorbunov.github.io/portfolio",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
@@ -20,9 +20,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^14.0.2",
     "autoprefixer": "^10.4.16",
-    "eslint-config-prettier": "^9.0.0",
     "gh-pages": "^6.0.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.5"
