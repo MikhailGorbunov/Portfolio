@@ -47,29 +47,26 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.
+            type="BSc Electrical and Mechanical Engineering"
+            time="Sep 2017-Jun 2022"
+            place="University of Edinburgh"
+            info="Relevant courses included Digital System Design, Digital System Design 2, Power Systems, Power Electronics and Machines, 
+            Control and Instrumentation Engineering, Interdisciplinary group project.
           "
           />
+           <Details
+            type="Electrical Vehicle Powertrain Manager at Formula Student"
+            time="Jun 2018-Jul 2021"
+            place="University of Edinburgh"
+            info="some information about
+          "/>
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.
+            type="Professional Development Award"
+            time="Oct 2022-Feb 2023"
+            place="CodeClan"
+            info="Relevant programming languages learnt included Python, JavaScript, Java, CSS and HTML
           "
-          />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence.
-          "
-          />
+          /> 
         </ul>
       </div>
     </div>

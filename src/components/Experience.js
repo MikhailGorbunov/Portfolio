@@ -53,31 +53,32 @@ const Experience = () => {
           md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          
+        <Details
+            position="Junior Electrical Engineer"
+            company="Stewart Technology LTD"
+            companyLink="https://www.stewart-technology.co.uk/"
+            time=" Jun 2022-Oct 2022"
+            address="Galashiels, Scotland, UK"
+            work="Worked on a team responsible for developing new features for Google's 
+          search engine, including improving the accuracy and relevance of search results and 
+          developing new tools for data analysis and visualization.
+          "
+          />
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.Google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
+            position="Summer intern"
+            company="Stewart Technology LTD"
+            companyLink="https://www.stewart-technology.co.uk/"
+            time="Jun 2021-Sep 2021"
+            address="Galashiels, Scotland, UK"
             work="Worked on a team responsible for developing new features for Google's 
           search engine, including improving the accuracy and relevance of search results and 
           developing new tools for data analysis and visualization.
           "
           />
 
-          <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.Google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-          search engine, including improving the accuracy and relevance of search results and 
-          developing new tools for data analysis and visualization.
-          "
-          />
 
-          <Details
+          {/* <Details
             position="Software Engineer"
             company="Google"
             companyLink="www.Google.com"
@@ -87,9 +88,9 @@ const Experience = () => {
           search engine, including improving the accuracy and relevance of search results and 
           developing new tools for data analysis and visualization.
           "
-          />
+          /> */}
 
-          <Details
+          {/* <Details
             position="Software Engineer"
             company="Google"
             companyLink="www.Google.com"
@@ -99,8 +100,9 @@ const Experience = () => {
           search engine, including improving the accuracy and relevance of search results and 
           developing new tools for data analysis and visualization.
           "
-          />
-          <Details
+          /> */}
+
+          {/* <Details
             position="Software Engineer"
             company="Google"
             companyLink="www.Google.com"
@@ -110,7 +112,30 @@ const Experience = () => {
           search engine, including improving the accuracy and relevance of search results and 
           developing new tools for data analysis and visualization.
           "
-          />
+          /> */}
+
+          {/* <Details
+            position="Software Engineer"
+            company="Google"
+            companyLink="www.Google.com"
+            time="2022-Present"
+            address="Mountain View, CA"
+            work="Worked on a team responsible for developing new features for Google's 
+          search engine, including improving the accuracy and relevance of search results and 
+          developing new tools for data analysis and visualization.
+          "
+          /> */}
+          {/* <Details
+            position="Software Engineer"
+            company="Google"
+            companyLink="www.Google.com"
+            time="2022-Present"
+            address="Mountain View, CA"
+            work="Worked on a team responsible for developing new features for Google's 
+          search engine, including improving the accuracy and relevance of search results and 
+          developing new tools for data analysis and visualization.
+          "
+          /> */}
         </ul>
       </div>
     </div>
