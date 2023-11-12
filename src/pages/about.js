@@ -3,35 +3,35 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
-import { useInView, useMotionValue, useSpring } from "framer-motion";
+import profilePic from "../../public/images/profile/Selfie2.png";
+// import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
 
-const AnimatedNumbers = ({ value }) => {
-  const ref = useRef(null);
+// const AnimatedNumbers = ({ value }) => {
+//   const ref = useRef(null);
 
-  const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, { once: true });
+//   const motionValue = useMotionValue(0);
+//   const springValue = useSpring(motionValue, { duration: 3000 });
+//   const isInView = useInView(ref, { once: true });
 
-  useEffect(() => {
-    if (isInView) {
-      motionValue.set(value);
-    }
-  }, [isInView, value, motionValue]);
+//   useEffect(() => {
+//     if (isInView) {
+//       motionValue.set(value);
+//     }
+//   }, [isInView, value, motionValue]);
 
-  useEffect(() => {
-    springValue.on("change", (latest) => {
-      if (ref.current && latest.toFixed(0) <= value) {
-        ref.current.textContent = latest.toFixed(0);
-      }
-    });
-  }, [springValue, value]);
-  return <span ref={ref}></span>;
-};
+//   useEffect(() => {
+//     springValue.on("change", (latest) => {
+//       if (ref.current && latest.toFixed(0) <= value) {
+//         ref.current.textContent = latest.toFixed(0);
+//       }
+//     });
+//   }, [springValue, value]);
+//   return <span ref={ref}></span>;
+// };
 
 function about() {
   return (
@@ -54,24 +54,24 @@ function about() {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with
-                a passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                Hi, I&apos;m Mikhail Gorbunov, a software engineer and web
+                developer with a passion for creating beautiful, functional, and
+                user-centered digital experiences or stable, reliable software
+                for embedded systems. I am always looking for new and
+                innovative ways to bring clients&apos; visions to life.
               </p>
               <p className="my-4 font-medium">
                 I believe that design is about more than just making things look
                 pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.{" "}
+                intuitive, enjoyable experiences for users.
               </p>
               <p className="font-medium">
                 {" "}
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Whether I&apos;m working on a website, mobile app, or embedded
+                software, I bring my commitment to design excellence, and efficient 
+                readable lean code to every project I work on. I look forward to
+                the opportunity to bring my skills and passion to your next
+                project.
               </p>
             </div>
             <div
@@ -93,7 +93,7 @@ function about() {
               className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 
             xl:flex-row xl:items-center md:order-3"
             >
-              <div className="flex flex-col items-end justify-center xl:items-center">
+              {/* <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={50} />+
                 </span>
@@ -125,7 +125,7 @@ function about() {
                 >
                   years of experience
                 </h2>
-              </div>
+              </div> */}
             </div>
           </div>
           <Skills />

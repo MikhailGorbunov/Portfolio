@@ -4,14 +4,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/create loading screen in react js.jpg";
-import article3 from "../../public/images/articles/create modal component in react using react portals.png";
-import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import article6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import article7 from "../../public/images/articles/What is higher order component in React.jpg";
-import article8 from "../../public/images/articles/What is Redux with easy explanation.png";
+import article1 from "../../public/images/articles/Generator.png";
+import article2 from "../../public/images/articles/Drone.png";
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -136,8 +130,8 @@ const articles = () => {
             <FeatureArticle
               title=" Build A Custom Pagination Component In Reactjs From Scratch"
               summary=" Build A Custom Pagination Component In Reactjs From Scratch"
-              time="9 min read"
-              link="/"
+              time="70 min read"
+              link="/Final_Report.pdf"
               img={article1}
             />
             <FeatureArticle
@@ -145,12 +139,12 @@ const articles = () => {
               summary=" Learn how to create stunning loading screens in React with 3 different methods. 
               Discover how to use React-Loading, React-Lottie & build a custom loading screen. 
               Improve the user experience."
-              time="10 min read"
-              link="/"
+              time="4 min read"
+              link="/Turbine_Group_Project.pdf"
               img={article2}
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          {/* <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
             All Articles
           </h2>
           <ul>
@@ -196,7 +190,7 @@ const articles = () => {
               link="/"
               img={article3}
             />
-          </ul>
+          </ul> */}
         </Layout>
       </main>
     </>
